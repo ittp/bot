@@ -1,0 +1,18 @@
+  #!/bin/env bash
+. ../lib
+
+# action message 
+message() {
+	local text=$0
+	echo $bot_token
+	echo "message: ${@}"
+	cid=""
+	text="test"
+
+	echo $0
+  
+  #if($token)
+
+    # check token
+	curl -X POST https://api.telegram.org/bot$TOKEN/sendMessage?chat_id=$cid&message_text=$text --proxy $proxy | jq
+}
