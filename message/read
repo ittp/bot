@@ -1,0 +1,10 @@
+. ./lib/bot
+
+# action read <cid> <mid>
+
+read() {
+  local cid mid
+  echo $mid
+  echo $cid
+  get_message $cid $mid
+}
