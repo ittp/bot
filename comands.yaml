@@ -1,5 +1,6 @@
 
 command: start
-action: action.start
-message: action.start.message
-access: admins 
+  action: action.start
+  message: action.start.message
+  access: admins 
+  callback: cb(data)
