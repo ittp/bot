@@ -16,7 +16,8 @@ jobs:
 
     steps:
       - name: Print the input name to STDOUT
-          run: echo ${{ inputs.type }}
+        run: echo ${{ inputs.type }}
+        
       - name: getUpdates curl
       # You may pin to the exact commit or the version.
         # uses: alesil/actions-curl@3bdc94d2e231b65cfafd795a820f99890b0603f6
