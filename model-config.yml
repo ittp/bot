@@ -1,23 +1,23 @@
 server:
-  - command: status
-  - command: create
-  - command: update
-  - command: event
-  - command: config
-  
- client:
-  - command: init
-  - command: config
-  - command: start
-  - command: stop
-  - command: restart
-  - command: request
-  - command: exec
-  
-  - command: uptime
-  - command: service
-   - command: proccess
-  
-  - command: backups
-  
-  
+- command: status
+- command: create
+- command: update
+- command: event
+- command: config
+
+client:
+- command: init
+- command: config
+- command: start
+- command: stop
+- command: restart
+- command: request
+- command: exec
+
+- command: uptime
+- command: service
+- command: proccess
+
+- command: backups
+
+
