@@ -1,0 +1,15 @@
+#!/bin/env bash
+
+
+$type=$1
+
+$data=$2
+if [-e $type]; 
+then
+  echo $type
+fi
+
+method="-X POST"
+headers="-H "X-Request: $type -H Bot-Request-CID: $cid"
+$data=
+curl $header $method $config https://api.ittps.ru/bot/webhook -d ${data}
