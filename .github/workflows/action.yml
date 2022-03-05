@@ -2,28 +2,13 @@ name: call
 on:
   workflow_call:
     inputs:
-    
-      type:
-          description: 'type of message'
+  
+      text:
+          description: 'text'
           default: 'text'
           required: false
           type: string
           
-      action:
-        description: 'message action (get/send)'
-        default: 'ittp'
-        required: false
-        type: string
-       
-    
-      qeury:
-        description: 'data'
-        default: ''
-        required: false
-        type: string
-
-        
-    
 
 jobs:
   print-username:
