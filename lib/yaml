@@ -121,14 +121,28 @@ yaml_parse() {
     cat /dev/stdin | yaml_to_dumbl | eval "$filter" | sed -e ':loop' -e 's/\([^:]\+\)\.\([^:]\+\):/\1_\2:/' -e 't loop' -e 's/: *\(.*\)/="\1"/' -e "s/^/$prefix/"
 }
 
-get_config() {
+$action=""
 
+get_config() {
+    
+    action="get.config"
+    echo $action
 }
 
 get_action() {
-
+    echo "command: get_chats"
+    action="config" 
 }
 
 get_command() {
+    local request=$1
+    echo "command: get_chats"
+ action="command" 
+}
 
+get_chats() {
+    local request=$1
+    action="chats"
+    echo "command: get_chats"
+    echo $action
 }
