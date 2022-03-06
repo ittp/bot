@@ -1,5 +1,0 @@
-echo "bot lib"
-
-
-[ -r "${BASHBOT_ETC:-.}/mycommands.conf" ] && source "${BASHBOT_ETC:-.}/mycommands.conf"  "$1"
-lib=""
