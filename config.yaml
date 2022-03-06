@@ -1,8 +1,6 @@
 bot: ./bot
 libs: []
-config: []
-env: []
-actions: []
+config:
 
-
-  
+env: ./.env
+actions: ./actions
