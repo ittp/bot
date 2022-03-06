@@ -1,14 +1,1 @@
-model: 
- device:
-  uno: text.unique
-  type: text.autocomplete
-  manufacturer: text.autocomplete
-  model: text.autocomplete
- 
-inputs:
-  text:
-    default: <input type="text" />
-    autocomplete: <input type="text" />
-  select:
-    default: <input type="text" />
-    autocomplete: <input type="text" />
+
