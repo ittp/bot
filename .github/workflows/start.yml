@@ -1,0 +1,13 @@
+name: start
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm install -g bats && npm -g install yarn
+      - run: bats -v
+      - run: yarn -v
