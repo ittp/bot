@@ -48,6 +48,8 @@ function version {
 	echo "by Fabian Schlenz"
 }
 
+
+# . ./list_chats.sh
 function list_chats {
 	log "$URL$TOKEN"
 	response=`curl $CURL_OPTIONS $URL$TOKEN/getUpdates`
