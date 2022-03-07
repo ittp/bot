@@ -1,13 +1,13 @@
-name: NodeJS 16.x
-version: 16
-action:
-  before: ""
+- name: NodeJS 16.x
+  env: $(cat .env)
+  action:
+  before: message "Install: $name"
   curl: curl -sL https://deb.nodesource.com/setup_16.x | bash -
   run: apt-get update && apt-get install node && node -v
 
-name: Yarn
-version: 1
-action:
+- name: Yarn
+  
+  action:
   before: ""
   #url: curl -sL https://deb.nodesource.com/setup_16.x | bash -
   run: npm -g install yarn && yarn -v
